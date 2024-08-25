@@ -33,13 +33,13 @@ img {
   font-size: 36px;
 }
 
-#buttons {
+.buttons {
   display: flex;
   justify-content: center;
   gap: 100px;
   align-items: end;
 }
-#buttons .btn {
+.buttons .btn {
   cursor: pointer;
 }
 

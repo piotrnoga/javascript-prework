@@ -70,8 +70,10 @@ function playGame(argPlayerMove) {
 
             printWinner(winner);
 
-            showOverlay()
-            playAgain()
+            setTimeout(function() {
+                showOverlay()
+                playAgain()
+            }, 1000);
 
         } else if (argPlayerPoints == 3) {
             winner = 'Wygrałeś grę!'
@@ -82,8 +84,10 @@ function playGame(argPlayerMove) {
 
             printWinner(winner);
 
-            showOverlay()
-            playAgain()
+            setTimeout(function() {
+                showOverlay()
+                playAgain()
+            }, 1000);
         }
     }
 
