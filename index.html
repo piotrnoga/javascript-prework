@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <title>Kamień, papier, nożyce</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div id="buttons">
-            <button id="play-rock">Kamień</button>
-            <button id="play-paper">Papier</button>
-            <button id="play-scissors">Nożyce</button>
-        </div>
-        <div id="messages"></div>
+    <div id="overlay">
+        <div id="overlayMessage"></div>
     </div>
+
+
+    <div class="welcome">
+        <h1>Witaj w grze</h1>
+        <img src="images/rock-paper-scissors.svg" alt="...">
+        <h1>Kamień - Papier - Nożyce</h1>
+    </div>
+    <div class="container">
+        <h2>KOMPUTER <img src="images/cup.svg" class="cup" alt="..."></h2>
+        <div id="buttons">
+            <div id="computer-rock"><img src="images/rock.svg" alt="..."></div>
+            <div id="computer-paper"><img src="images/paper.svg" alt="..."></div>
+            <div id="computer-scissors"><img src="images/scissors.svg" alt="..."></div>
+        </div>
+
+        <div id="result">Komputer 0 - 0 Gracz</div>
+        <div class="notifications">
+            <div id="messages">Rozpocznijmy grę!</div>
+            <div id="winner"></div>
+        </div>
+
+        <div id="buttons">
+            <div id="play-rock" class="btn"><img src="images/rock.svg" alt="..."></div>
+            <div id="play-paper" class="btn"><img src="images/paper.svg" alt="..."></div>
+            <div id="play-scissors" class="btn"><img src="images/scissors.svg" alt="..."></div>
+        </div>
+        <h2>GRACZ <img src="images/cup.svg" class="cup" alt="..."></h2>
+    </div>
+
+
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
 </body>
