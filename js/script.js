@@ -41,10 +41,10 @@ function playGame(argPlayerMove) {
         printMessage('Komputer zagrał ' + argComputerMove + ', a Ty ' + argPlayerMove);
         
         if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
-            printMessage('Ty wygrywasz tę rundę');
+            printMessage('Ty wygrywasz tę rundę!');
             playerPoints += 1;
         } else if(argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
-            printMessage('Ty wygrywasz tę rundę');
+            printMessage('Ty wygrywasz tę rundę!');
             playerPoints += 1;
         } else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
             printMessage('Ty wygrywasz tę rundę!');
@@ -54,7 +54,7 @@ function playGame(argPlayerMove) {
         } else if(argPlayerMove == 'nieznany ruch') {
             printMessage('Wpisałeś złą wartość!')
         } else {
-            printMessage('Komputer wygry tę rundę!')
+            printMessage('Komputer wygrywa tę rundę!')
             computerPoints += 1;
         }
     }
